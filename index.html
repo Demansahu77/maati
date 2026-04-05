@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX FORGE - Elite Fitness Training</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         PRELOADER
+         ============================================ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">APEX FORGE</div>
+        <div class="preloader-bar-container">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         SCROLL PROGRESS BAR
+         ============================================ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">APEX FORGE</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+                <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger" id="navHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-eyebrow">Elite Training Facility</div>
+            <h1 class="hero-title">FORGE YOUR LEGACY</h1>
+            <p class="hero-description">
+                World-class training for those who refuse to settle. Push beyond limits in a facility designed for champions.
+            </p>
+            <div class="hero-cta">
+                <a href="#membership" class="btn btn-primary">Start Training</a>
+                <a href="#about" class="btn btn-secondary">Explore Facility</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-target="15000" data-suffix="K+">0</div>
+                    <div class="hero-stat-label">Members</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-target="50" data-suffix="+">0</div>
+                    <div class="hero-stat-label">Elite Trainers</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">24/7</div>
+                    <div class="hero-stat-label">Access</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img 
+                class="hero-bg parallax-hero" 
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&h=1600&fit=crop&q=80" 
+                alt="Apex Forge Gym"
+            >
+        </div>
+    </section>
+
+    <!-- ============================================
+         MARQUEE TICKER
+         ============================================ -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="marquee-item">STRENGTH</div>
+            <div class="marquee-item">DISCIPLINE</div>
+            <div class="marquee-item">RESULTS</div>
+            <div class="marquee-item">APEX FORGE</div>
+            <div class="marquee-item">ELITE TRAINING</div>
+            <div class="marquee-item">NO EXCUSES</div>
+            <div class="marquee-item">STRENGTH</div>
+            <div class="marquee-item">DISCIPLINE</div>
+            <div class="marquee-item">RESULTS</div>
+            <div class="marquee-item">APEX FORGE</div>
+            <div class="marquee-item">ELITE TRAINING</div>
+            <div class="marquee-item">NO EXCUSES</div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         VALUES SECTION
+         ============================================ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">WHAT DEFINES US</h2>
+                <p class="section-subtitle">
+                    Four pillars that separate elite athletes from the rest. This is where legends are forged.
+                </p>
+            </div>
+            <div class="cards-grid">
+                <div class="card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">RAW POWER</h3>
+                    <p class="card-description">
+                        State-of-the-art equipment and training zones designed to push your absolute limits.
+                    </p>
+                </div>
+                <div class="card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C12 2 9 4 9 8C9 10 10 11 10 13C10 14.5 9 16 7 16C7 16 9 18 11 18C13 18 14 17 14 15C14 13 12 12 12 10C12 8 14 6 16 6C16 6 14 4 12 2Z" />
+                            <path d="M7 16C5 16 4 17 4 19C4 21 5 22 7 22C9 22 10 21 10 19C10 17 9 16 7 16Z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">RELENTLESS DRIVE</h3>
+                    <p class="card-description">
+                        A community of warriors who show up every day, no matter what. Weakness is not an option.
+                    </p>
+                </div>
+                <div class="card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">ELITE COACHING</h3>
+                    <p class="card-description">
+                        World-class trainers with championship pedigree. Learn from the best to become the best.
+                    </p>
+                </div>
+                <div class="card tilt-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                            <circle cx="12" cy="12" r="4" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">PROVEN RESULTS</h3>
+                    <p class="card-description">
+                        Thousands of transformations. Hundreds of champions. One unmatched legacy of excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HORIZONTAL SCROLL STATS SECTION
+         ============================================ -->
+    <!-- ============================================
+         ANIMATED STATS SECTION
+         ============================================ -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">BUILT ON RESULTS</h2>
+                <p class="section-subtitle">The numbers don't lie.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-big-num" data-count="15000" data-display="15K+">0</span>
+                    <div class="stat-name">Active Members</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-big-num" data-count="50" data-display="50+">0</span>
+                    <div class="stat-name">Elite Trainers</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-big-num" data-count="98" data-display="98%">0</span>
+                    <div class="stat-name">Satisfaction Rate</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <span class="stat-big-num" data-count="10" data-display="10 YRS">0</span>
+                    <div class="stat-name">Years of Excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRICING SECTION
+         ============================================ -->
+    <section class="section section-dark" id="membership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">CLAIM YOUR SPOT</h2>
+                <p class="section-subtitle">
+                    Choose your path. Every membership includes 24/7 access, world-class equipment, and unlimited potential.
+                </p>
+            </div>
+            <div class="pricing-toggle-container" data-aos="fade-up">
+                <div class="pricing-toggle">
+                    <div class="pricing-toggle-option active" id="monthlyToggle">Monthly</div>
+                    <div class="pricing-toggle-option" id="annualToggle">Annual</div>
+                </div>
+                <div class="pricing-savings-badge">Save 20%</div>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="pricing-name">BASIC</h3>
+                    <div class="pricing-price" data-monthly="49">$49</div>
+                    <div class="pricing-period">Per Month</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">24/7 Facility Access</li>
+                        <li class="pricing-feature">All Equipment Zones</li>
+                        <li class="pricing-feature">Locker Room Access</li>
+                        <li class="pricing-feature">Group Classes</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Join Basic</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3 class="pricing-name">PRO</h3>
+                    <div class="pricing-price" data-monthly="99">$99</div>
+                    <div class="pricing-period">Per Month</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Everything in Basic</li>
+                        <li class="pricing-feature">2 Personal Training Sessions</li>
+                        <li class="pricing-feature">Nutrition Consultation</li>
+                        <li class="pricing-feature">Recovery Suite Access</li>
+                        <li class="pricing-feature">Guest Pass (2/month)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Join Pro</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="pricing-name">ELITE</h3>
+                    <div class="pricing-price" data-monthly="199">$199</div>
+                    <div class="pricing-period">Per Month</div>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature">Everything in Pro</li>
+                        <li class="pricing-feature">Unlimited Personal Training</li>
+                        <li class="pricing-feature">Custom Meal Plans</li>
+                        <li class="pricing-feature">Private Training Area</li>
+                        <li class="pricing-feature">Priority Booking</li>
+                        <li class="pricing-feature">Unlimited Guest Pass</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Join Elite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TRAINERS SECTION
+         ============================================ -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">MEET THE LEGENDS</h2>
+                <p class="section-subtitle">
+                    Our trainers aren't just coaches — they're champions, athletes, and warriors who've mastered their craft.
+                </p>
+            </div>
+            <div class="cards-grid">
+                <div class="trainer-card tilt-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img 
+                        class="trainer-image" 
+                        src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=800&fit=crop&q=80" 
+                        alt="Marcus Steel"
+                    >
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">MARCUS STEEL</h3>
+                        <div class="trainer-specialty">Strength & Conditioning</div>
+                        <div class="trainer-social">
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card tilt-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img 
+                        class="trainer-image" 
+                        src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=600&h=800&fit=crop&q=80" 
+                        alt="Sarah Blaze"
+                    >
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">SARAH BLAZE</h3>
+                        <div class="trainer-specialty">HIIT & Combat Sports</div>
+                        <div class="trainer-social">
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card tilt-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img 
+                        class="trainer-image" 
+                        src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=800&fit=crop&q=80" 
+                        alt="Victor Reign"
+                    >
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">VICTOR REIGN</h3>
+                        <div class="trainer-specialty">Olympic Weightlifting</div>
+                        <div class="trainer-social">
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="trainer-social-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         ============================================ -->
+    <section class="section section-dark" id="results">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">REAL WARRIORS, REAL RESULTS</h2>
+                <p class="section-subtitle">
+                    Don't take our word for it. Hear from the champions we've helped forge.
+                </p>
+            </div>
+            
+            <!-- Testimonials Carousel -->
+            <div class="testimonials-container">
+                <div class="testimonials-carousel" data-aos="fade-up">
+                    <div class="carousel-arrow left" onclick="scrollTestimonials(-1)">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </div>
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                            </div>
+                            <p class="testimonial-quote">
+                                "APEX FORGE changed my life. The trainers pushed me beyond what I thought was possible. Lost 40lbs and gained a championship mindset."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">JD</div>
+                                <div>
+                                    <div class="testimonial-name">James Davidson</div>
+                                    <div class="testimonial-title">Pro Member, 2 Years</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                            </div>
+                            <p class="testimonial-quote">
+                                "This isn't just a gym. It's a brotherhood. The energy here is unmatched. Every session feels like going to war with your crew."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">MC</div>
+                                <div>
+                                    <div class="testimonial-name">Maria Chen</div>
+                                    <div class="testimonial-title">Elite Member, 3 Years</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                            </div>
+                            <p class="testimonial-quote">
+                                "I've trained at gyms around the world. APEX FORGE is on another level. The equipment, the coaches, the atmosphere — nothing comes close."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">TR</div>
+                                <div>
+                                    <div class="testimonial-name">Tyler Rodriguez</div>
+                                    <div class="testimonial-title">Elite Member, 1 Year</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-arrow right" onclick="scrollTestimonials(1)">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Before/After Transformation Slider -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 style="text-align: center; font-size: clamp(28px, 4vw, 36px); margin-bottom: var(--spacing-xl); letter-spacing: var(--letter-spacing-subheading);">
+                    TRANSFORMATIONS THAT SPEAK
+                </h3>
+                <div class="transformation-slider" id="transformationSlider">
+                    <div class="transformation-image transformation-before"></div>
+                    <div class="transformation-image transformation-after" id="transformationAfter">
+                        <div class="transformation-label after">AFTER</div>
+                    </div>
+                    <div class="transformation-label before">BEFORE</div>
+                    <div class="transformation-handle" id="transformationHandle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA BANNER
+         ============================================ -->
+    <section class="cta-banner" id="contact" data-aos="zoom-in">
+        <div class="cta-content">
+            <h2 class="cta-title">READY TO BEGIN?</h2>
+            <p class="cta-description">
+                Stop waiting. Stop making excuses. The iron doesn't lie. Your transformation starts the moment you walk through our doors.
+            </p>
+            <a href="#membership" class="btn btn-primary">Claim Your Spot</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">APEX FORGE</div>
+                <p class="footer-tagline">
+                    Where legends are built. Where weakness dies. Where champions are forged.
+                </p>
+            </div>
+            <div>
+                <nav class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#membership" class="footer-link">Membership</a>
+                    <a href="#trainers" class="footer-link">Trainers</a>
+                    <a href="#results" class="footer-link">Results</a>
+                </nav>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="newsletter-submit">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+                <svg viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+                <svg viewBox="0 0 24 24">
+                    <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 APEX FORGE. All rights reserved. Forge Your Legacy.
+        </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
